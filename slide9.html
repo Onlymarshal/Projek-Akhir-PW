@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Peserta</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    tr{
+      display: flex;
+      align-content: center;
+    }
+    table{
+      margin-left: auto;
+    }
+    td{
+      margin-left: 10px;
+    }
+    th{
+      margin-left: 10px;
+    }
+    input{
+      margin-right: 1px;
+    }
+    label{
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav style="display: flex;justify-content: space-between;" class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="HalamanUtama.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+  </div>
+
+    <!-- Right navbar links -->
+    <div style="display: flex; justify-content:end;">
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="login.html" class="nav-link">Login</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="register.html" class="nav-link">Register</a>
+      </li>
+    </div>
+
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">SISTA - Backend</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/avatar4.png" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Form Seminar</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p><b>Seminar TA</b> <i class="right fas fa-angle-right"></i></p>
+                </a>
+              </li>
+              <p style="color: white;">_____________________________</p>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p><b>Mahasiswa</b></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p><b>Dosen</b></p>
+                </a>
+              </li>
+              <p style="color: white;">_____________________________</p>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p><b>logout</b></p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <div class="bawahnav" style="display: flex;">
+    <h3 style="padding-left: 255px; margin: 30px; font-family: 'Times New Roman', Times, serif; text-shadow: yellowgreen 1px 1px 2px;">Daftar Peserta Seminar</h3>
+    <h4 style="margin: 37px; padding-left: 705px;">Admin | Logout</h4>
+  </div>
+  <div class="submit" style="display: flex; padding-top: 20px;">
+    <h6><a href="slide7.html" style="padding-left: 1285px;">Seminar  <i class="right fas fa-angle-right" style="color: black; margin-left: 10px;"></i></a></h6>
+    <h6 style="padding-left: 10px;"> Form Seminar</h6>
+ </div>
+ <div class="deskripsi" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; padding-left: 280px;">
+    <h5><b>Seminar Mahasiswa</b> <span style="padding-left: 10px;">:</span><span style="padding-left: 20px;">Diego Armando (0102002) - Teknik Informatika </span> <br> 
+        <b>Waktu Seminar</b><span style="padding-left: 55px;">:</span><span style="padding-left: 20px;">Senin, 4 Januari 2020, Jam: 10:00</span><br>
+        <b>Judul</b> <span style="padding-left: 143px;">:</span><span style="padding-left: 20px;">Rancangan Bangun Aplikasi Seminar Tugas Akhir Menggunakan MVC Framewok</span> </h5>
+ </div>
+ <h2 style="padding-left: 690px; margin: 30px; font-family: 'Times New Roman', Times, serif; text-shadow: yellowgreen 1px 1px 2px;">Daftar Peserta Seminar</h2>
+ 
+ <div class="card-body table-responsive p-0">
+    <table class="table table-hover text-nowrap" style="border: 3px solid black; width: 1100px; margin-right: 95px;">
+      <thead>
+        <tr style="border-bottom: 3px solid black; background-color: rgb(191, 255, 142)">
+          <th>No</th>
+          <th style="padding-left: 84px;">NIM</th>
+          <th style="padding-left: 84px;">Mahasiswa/i</th>
+          <th style="padding-left: 93px;">Prodi</th>
+          <th style="padding-left: 93px;">Waktu</th>
+          <th style="padding-left: 93px;">Status</th>
+          <th style="padding-left: 78px;">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid black; background-color: rgb(255, 255, 255)">
+          <td style="padding-left: 30px;">1</td>
+          <td style="padding-left: 75px;">0102001</td>
+          <td style="padding-left: 60px;">Dieogo Armando</td>
+          <td style="padding-left: 70px;"><span class="tag tag-success">Proposal</span></td>
+          <td style="padding-left: 50px;">10:00 04-01-2021 </td>
+          <td style="padding-left: 57px;">Online</td>
+          <td style="padding-left: 58px;">Edit | Delete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid black; background-color: rgb(255, 255, 255)">
+          <td style="padding-left: 30px;">2</td>
+          <td style="padding-left: 75px;">0102002</td>
+          <td style="padding-left: 60px;">Ahmad Budiman</td>
+          <td style="padding-left: 57px;"><span class="tag tag-warning">Seminar Hasil</span></td>
+          <td style="padding-left: 29px;">10:00 04-01-2021</td>
+          <td style="padding-left: 57px;">Online</td>
+          <td style="padding-left: 58px;">Edit | Delete</td>
+        </tr>
+        <tr style="background-color: rgb(255, 255, 255)">
+          <td style="padding-left: 30px;">3</td>
+          <td style="padding-left: 75px;">0102021</td>
+          <td style="padding-left: 60px;">Fredelina Putri</td>
+          <td style="padding-left: 69px;"><span class="tag tag-primary">Seminar Akhir</span></td>
+          <td style="padding-left: 29px;">10:00 04-01-2021</td>
+          <td style="padding-left: 58px;">B2304</td>
+          <td style="padding-left: 62px;">Edit | Delete</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="submit" style="margin: 20px; width: 210px; height: 30px; margin-left: 340px; border: 2px solid black; box-shadow: 2px 2px 2px black; background-color: rgb(177, 246, 255); text-align: center;">
+    <p><a href="slide5.html" style="color: black; font-family: Georgia, 'Times New Roman', Times, serif;">Tambah Peserta Seminar</a></p>
+  </div>
+ 
+  <footer class="main-footer" style="margin-top: 45px;">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  </html>
+    <!-- /.content-header -->
+    <!-- /.content -->
+  </div>
+  
+  
+
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+</body>
+</html>
